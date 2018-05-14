@@ -86,3 +86,8 @@ Link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operato
 * In a regular function call, 'this' always associate to 'window object' as that is the global/default context.
 * Associativity of 'this' changes as soon as a new 'execution stack' is started using a 'method' (function of an object).
 * 'this' is assigned a value only when 'object' calls a 'method'.
+
++*DOM and DOM Manipulation*+
+* Document Object Model : This is a structural (fully object oriented) representation of HTML document.
+* It is used to connect the HTML webpages with the scripts like JavaScript.
+* JavaScript can access 'document object', interact/manipulate the DOM therefore the webpage.
