@@ -54,9 +54,35 @@ Link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operato
 * Can define using {} or new Object().
 * Data mutation is possible in objects.
 * Value can be accessed like object["key"] or object.key
-* Objects can contain primitive types, arrays, objects or methods
+* Objects can contain primitive types, arrays, objects or methods.
+* Method Borrowing : Use one object's method and assign it to some other object.
 
 +*Loops*+
 * break; to break out of the complete loop.
 * continue; to break the current iteration and start next iteration.
 
++*Execution Context*+
+* Default (Global) execution context is the "window" context.
+* All the code that is not in any function is executed in default context.
+* When a function is accessed, it's own execution context is created and stacked on top of context stack.
+* All the variables are associated with their own execution context.
+* An execution context have following parts in the creation phase:
+** Creation of Variable Object (VO) : Basis of "Hoisting"
+** Creation of Scope Chain
+** Determine value of 'this' variable
+
++*Hoisting*+
+* Means, functions and variables are available even before execution phase.
+* Hoisting works only with function statements/declerations "function abc(){}" not with function expressions "var abc = function(){}".
+* Hoisting for variables only delares the variables but assign them "undefined" data-type before actual value is assigned to them.
+
++*Scope Chain*+
+* Scope is space/environment created by functions in which its variables are accessible.
+* Lexical scoping means a function defined within another function have the access to scope of parent function.
+* Scope Chain means looking for variables in parents if not found in current scope, it doesn't work other way round.
+* Scope Chain vs Execution Stack : SC is the order in which functions are written lexically, while ES is the order in which functions are called.
+
++*'this' keyword*+
+* In a regular function call, 'this' always associate to 'window object' as that is the global/default context.
+* Associativity of 'this' changes as soon as a new 'execution stack' is started using a 'method' (function of an object).
+* 'this' is assigned a value only when 'object' calls a 'method'.
