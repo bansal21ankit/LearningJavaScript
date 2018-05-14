@@ -1,0 +1,62 @@
++*DRY and CamelCase*+
+* DRY is fundamental practice to not repeat the code we already wrote.
+* CamelCase is variable name writing method so that to separate out two different words by only Capital Letter.
+
++*Type Coercion*+
+* Conversion of variable data type within a statement to other type.
+
++*Variable Mutation*+
+* Changing the value/type of variable after its decleration.
+
++*Operator precedence*+
+* Higher precedence is solved first.
+Link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
++*Control Statements (if/else)*+
+* If, Else If, Else
+* Switch
+
++*Equals and Comparison operator*+
+* == is the equals operator that ignores the data type while checking whether the two variables are equal or not. This internally performs Type Coercion.
+* === is the comparison operator that simply check the type and the value of two variables. Doesn't perform any Type Coercion.
+
++*Boolean Logic*+
+* AND (&&)
+* OR (||)
+* NOT (!)
+
++*Expression vs Statement*+
+* Expression is used to produce some immediate product or store value in a variable.
+* Statement is used to just perform some action.
+
++*Functions*+
+* Can be declared as "function funName(parameterName1,..){}"
+* Can be declared as "var funName = function(parameterName1,...){}"
+* When calling function the values sent are called arguments
+* Within function calls the values are called parameters
+
++*Arrays*+
+* Indexing is 0 based.
+* Can define using [] or new Array().
+* Can contain mixture of data types.
+* Data mutation is possible with variables.
+* Arrays can contain primitive types, arrays or objects.
+* Common methods (Methods are functions associated with some object):
+** length : This is a property not actually method.
+** push(x) : Add a value (i.e. x) in end.
+** pop() : Removes the last value.
+** unshift(x) : Add a value (i.e. x) in starting.
+** shift() : Removes the first value.
+** indexOf(x) : Returns index of value (i.e. x), if not found returns -1.
+
++*Objects*+
+* Contains key:value pairs or properties separated by ,
+* Can define using {} or new Object().
+* Data mutation is possible in objects.
+* Value can be accessed like object["key"] or object.key
+* Objects can contain primitive types, arrays, objects or methods
+
++*Loops*+
+* break; to break out of the complete loop.
+* continue; to break the current iteration and start next iteration.
+
