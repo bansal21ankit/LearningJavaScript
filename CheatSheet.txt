@@ -91,3 +91,6 @@ Link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operato
 * Document Object Model : This is a structural (fully object oriented) representation of HTML document.
 * It is used to connect the HTML webpages with the scripts like JavaScript.
 * JavaScript can access 'document object', interact/manipulate the DOM therefore the webpage.
+* Selecting elements using 'document.querySelector()' we need '#' for id, '.' for class or directly use 'getElementById()'.
+* Updating data within the elements use '.textContent' or '.innerHTML' along with 'document.querySelector()'.
+* Changing the CSS using document object '.style.xxx' can be used along with 'document.querySelector()'.
